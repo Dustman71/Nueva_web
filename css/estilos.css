@@ -107,7 +107,7 @@ header.fija h2{
 	margin:0;		
 	}	
 #intro{
-  background: url(../images/b.jpg) no-repeat center center fixed #ecf0f1; 
+  background: url(../images/bg.jpg) no-repeat 50% 0 fixed #ecf0f1; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -165,6 +165,7 @@ section{
 
 #color-quiensoy{
 	background-color:#27ae60;
+	
 }
 
 #color-diseñoweb{
@@ -172,7 +173,7 @@ section{
 }
 
 #color-diseñograf{
-	background-color:#2980b9;	
+	background-color:#2980b9;		
 }
 
 #color-fotografia{
@@ -180,6 +181,40 @@ section{
 }
 
 #color-trabajos{
+	background-color:#c0392b;	
+}
+#quiensoy{
+	background-color:#27ae60;
+  	background: url(../images/bg2.jpg) no-repeat 50% 0 fixed #ecf0f1; 	
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	
+}
+
+#diseñoweb{
+	background-color:#8e44ad;
+  	background: url(../images/bg.jpg) no-repeat 50% 0 fixed #ecf0f1; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;		
+}
+
+#diseñograf{
+	background-color:#2980b9;
+  	background: url(../images/bg2.jpg) no-repeat 50% 0 fixed #ecf0f1; 	
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;		
+}
+
+#fotografia{
+	background-color:#2c3e50;	
+}
+
+#trabajos{
 	background-color:#c0392b;	
 }
 
