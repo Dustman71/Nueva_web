@@ -1,0 +1,197 @@
+/*fuentes*/
+
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/Nexa-Bold/Nexa-Bold.eot');
+    src: url('../fonts/Nexa-Bold/Nexa-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Nexa-Bold/Nexa-Bold.woff') format('woff'),
+         url('../fonts/Nexa-Bold/Nexa-Bold.ttf') format('truetype'),
+         url('../fonts/Nexa-Bold/Nexa-Bold.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../fonts/Nexa-Light/nexa_light.eot');
+    src: url('../fonts/Nexa-Light/nexa_light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Nexa-Light/nexa_light.woff') format('woff'),
+         url('../fonts/Nexa-Light/nexa_light.ttf') format('truetype'),
+         url('../fonts/Nexa-Light/nexa_light.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*animaciones*/
+
+@-webkit-keyframes rotateTarget {
+    0% {-webkit-transform:rotate(-15deg);}
+   16% {-webkit-transform:rotate(15deg);}
+  33% {-webkit-transform:rotate(-10deg);}
+    50% {-webkit-transform:rotate(10deg);}
+   66% {-webkit-transform:rotate(-5deg);}
+  83% {-webkit-transform:rotate(5deg);}
+   100% {-webkit-transform:rotate(0deg);}  
+}
+@keyframes rotateTarget {
+    0% {transform:rotate(-15deg);}
+   16% {transform:rotate(15deg);}
+  33% {transform:rotate(-10deg);}
+    50% {transform:rotate(10deg);}
+   66% {transform:rotate(-5deg);}
+  83% {transform:rotate(5deg);}
+   100% {transform:rotate(0deg);}  
+}
+
+/*estilos*/
+
+html {
+	font-size:100%;	
+	font-family:nexa_lightregular;		
+}
+strong{
+	font-family:nexa_boldregular;	
+}
+body {
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	transition:background-color 
+	-webkit-transition: background-color 1s;  
+	-moz-transition: background-color 1s;  
+	-o-transition: background-color 1s;  
+	transition: background-color 1s;		
+}
+#intro,header,section,footer{}
+h1{
+	font: inherit;	
+	margin:0;
+	width:100%;
+	font-size: 6.1rem;
+}
+hgroup h2{
+	font: inherit;	
+	margin: 0;
+	width:100%;	
+	font-size: 4rem;	
+}
+hgroup{color:#2c3e50;position:absolute;top:0;margin-left:1rem;}
+.fija hgroup{margin-left:10px !important;left:0;}
+header{
+    width: 100%;
+	background-color: #ecf0f1;
+	height: 200px;
+	margin-top: -200px;
+}
+header.fija {
+    position: fixed;
+    top: 0;
+	height: 65px !important;	
+	margin-top:0;
+	-webkit-transition: margin-top 0.3s;  
+	-moz-transition: margin-top 0.3s;  
+	-o-transition: margin-top 0.3s;  
+	transition: margin-top 0.3s;
+	max-width:100%;	
+}
+header.fija h1{
+	font-size:30px;
+	height:40px;		
+	}
+header.fija h2{
+	font-size:20px;
+	margin:0;		
+	}	
+#intro{
+  background: url(../images/b.jpg) no-repeat center center fixed #ecf0f1; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align:center;	
+  width:100%;
+}
+.targetMove{
+	margin-top:-84px;
+	transform-origin:50% 0%;
+	-webkit-transform-origin:50% 0%;
+  	-webkit-animation: rotateTarget 3s 1 ease-in-out;
+	animation: rotateTarget 3s 1 ease-in-out;
+}
+
+nav{
+	margin: 0;
+	position: absolute;
+	bottom: -15px;
+	font-size:1.2rem;
+	right:0;
+	text-align: right;
+}
+.fija nav{margin-right:0 !important;right:0;}
+nav ul {
+	padding:0;
+}
+nav ul li{
+	display: inline-block;
+	#display:inline;#zoom:1;
+	padding: 0 15px;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color:#2c3e50;
+	-webkit-transition: color 1s;  
+	-moz-transition: color 1s;  
+	-o-transition: color 1s;  
+	transition: color 1s;		
+}
+nav a:hover {
+	color:#f1c40f;
+	-webkit-transition: color 1s;  
+	-moz-transition: color 1s;  
+	-o-transition: color 1s;  
+	transition: color 1s;	
+}
+
+section{
+	padding:60px 0;
+	height:800px;
+}
+
+#color-quiensoy{
+	background-color:#27ae60;
+}
+
+#color-diseñoweb{
+	background-color:#8e44ad;
+}
+
+#color-diseñograf{
+	background-color:#2980b9;	
+}
+
+#color-fotografia{
+	background-color:#2c3e50;	
+}
+
+#color-trabajos{
+	background-color:#c0392b;	
+}
+
+#color-contacto{
+	background-color:#16a085;	
+}
+
+a {
+	-moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
